@@ -24,7 +24,7 @@ household_power_consumption =
         subset(Date == "1/2/2007" | Date == "2/2/2007") %>%
         
         # Convert date and time
-        mutate(DateTime=parse_date_time(paste(Date,Time),"d/m/Y H/M/S")) %>%
+        mutate(datetime=parse_date_time(paste(Date,Time),"d/m/Y H/M/S")) %>%
 
         # Drop original date and time
         set(j=1:2, value=NULL)
