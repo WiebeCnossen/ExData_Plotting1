@@ -1,6 +1,6 @@
 if (!exists("household_power_consumption")) source("household_power_consumption.R")
 
-png("plot3.png")
+png("plot3.png", bg = "transparent")
 with(household_power_consumption, {
         plot(Sub_metering_1 ~ datetime,
              type = "l",

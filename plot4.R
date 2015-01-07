@@ -1,6 +1,6 @@
 if (!exists("household_power_consumption")) source("household_power_consumption.R")
 
-png("plot4.png")
+png("plot4.png", bg = "transparent")
 par(mfrow = c(2, 2))
 
 with(household_power_consumption, {
