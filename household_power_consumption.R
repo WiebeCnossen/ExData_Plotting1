@@ -9,6 +9,7 @@ library(lubridate, warn.conflicts = FALSE, quietly = TRUE)
 datafile <- "exdata-data-household_power_consumption.zip"
 if (!file.exists(datafile)) stop("Data file not present")
 
+# Get and clean data
 household_power_consumption =
         # Filename in zip
         "household_power_consumption.txt" %>%

@@ -7,7 +7,7 @@ with(household_power_consumption, {
         plot(Global_active_power ~ datetime,
              type = "l",
              xlab = "",
-             ylab = "Global Active Power (kilowatts)")
+             ylab = "Global Active Power")
         
         plot(Voltage ~ datetime, type = "l")
         
@@ -20,7 +20,8 @@ with(household_power_consumption, {
         legend("topright",
                c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),
                col = c("black", "red", "blue"),
-               lwd = 1)
+               lwd = 1,
+               box.lty = 0)
         
         plot(Global_reactive_power ~ datetime, type = "l")
 })
